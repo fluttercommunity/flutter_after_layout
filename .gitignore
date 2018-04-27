@@ -1,0 +1,14 @@
+Thumbs.db
+.DS_Store
+.atom/
+.dart_tool
+.idea
+.packages
+.pub/
+pubspec.lock
+Podfile.lock
+Pods/
+GeneratedPluginRegistrant.h
+GeneratedPluginRegistrant.m
+GeneratedPluginRegistrant.java
+*.iml
