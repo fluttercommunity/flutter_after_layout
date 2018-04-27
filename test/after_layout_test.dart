@@ -19,7 +19,7 @@ class TestWidget extends StatefulWidget {
 	_TestWidgetState createState() => _TestWidgetState();
 }
 
-class _TestWidgetState extends State<TestWidget> with AfterLayout<TestWidget> {
+class _TestWidgetState extends State<TestWidget> with AfterLayoutMixin<TestWidget> {
 	@override
 	Widget build(BuildContext context) {
 		return Container();

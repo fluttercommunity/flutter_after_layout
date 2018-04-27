@@ -18,7 +18,7 @@ class HomeScreen extends StatefulWidget {
   HomeScreenState createState() => new HomeScreenState();
 }
 
-class HomeScreenState extends State<HomeScreen> with AfterLayout<HomeScreen> {
+class HomeScreenState extends State<HomeScreen> with AfterLayoutMixin<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
