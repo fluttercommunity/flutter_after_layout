@@ -10,6 +10,8 @@ If you want to display a widget that depends on the layout, such as a `Dialog` o
 ```dart
 import 'package:flutter/material.dart';
 
+void main() => runApp(new MyApp());
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -63,6 +65,8 @@ This demo showcases how this package resolves the shortcomings shown above:
 ```dart
 import 'package:flutter/material.dart';
 import 'package:after_layout/after_layout.dart';
+
+void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
