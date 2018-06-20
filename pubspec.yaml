@@ -1,8 +1,10 @@
 name: after_layout
 description: Execute code after the first layout of your widget has been performed, i.e. after the first frame has been displayed.
-version: 1.0.2
-author: Simon Lightfoot <simon@devangels.london>
-homepage: https://github.com/slightfoot/flutter_after_layout
+version: 1.0.4
+authors:
+ - Flutter Community <flutter-community@googlegroups.com>
+ - Simon Lightfoot <simon@devangels.london>
+homepage: https://github.com/fluttercommunity/flutter_after_layout
 
 environment:
   sdk: ">=2.0.0-dev.28.0 <3.0.0"
