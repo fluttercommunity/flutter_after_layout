@@ -1,0 +1,6 @@
+is_package: true
+package_name: after_layout
+maintainer_name: Simon Lightfoot
+maintainer_username: slightfoot
+package_description: Brings functionality to execute code after the first layout of a widget has been performed.
+pub_package_name: after_layout
