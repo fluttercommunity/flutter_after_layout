@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.5 - 1.0.7
+  * Updated to support Dart 2 and Super Mixins - Thanks to Soundbytes
+
 ## 1.0.4
   * Added Flutter Community Logo.
 
