@@ -2,7 +2,7 @@ library after_layout;
 
 import 'package:flutter/widgets.dart';
 
-abstract class AfterLayoutMixin<T extends StatefulWidget> extends State<T> {
+mixin AfterLayoutMixin<T extends StatefulWidget> on State<T> {
   @override
   void initState() {
     super.initState();
