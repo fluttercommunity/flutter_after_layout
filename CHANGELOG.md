@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.7+1
+  * Updated authors and locked in Dart 2.
+
 ## 1.0.5 - 1.0.7
   * Updated to support Dart 2 and Super Mixins - Thanks to Soundbytes
 
