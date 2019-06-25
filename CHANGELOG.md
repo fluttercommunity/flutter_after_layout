@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.7+2
+  * Updated README.
+
 ## 1.0.7+1
   * Updated authors and locked in Dart 2.
 
