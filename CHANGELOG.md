@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0
+  * Add Null Safety.
+
 ## 1.0.7+2
   * Updated README.
 

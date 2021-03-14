@@ -3,9 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:after_layout/after_layout.dart';
 
 void main() {
-	testWidgets('MyWidget', (WidgetTester tester) async {
+	testWidgets('TestWidget', (WidgetTester tester) async {
 		int runCount = 0;
-		await tester.pumpWidget(new TestWidget(() => runCount++));
+		await tester.pumpWidget(TestWidget(() => runCount++));
 		expect(runCount, 1);
 	});
 }
