@@ -2,6 +2,7 @@
 
 ## 1.1.0
   * Add Null Safety.
+  * Switch to endOfFrame callback.
 
 ## 1.0.7+2
   * Updated README.
