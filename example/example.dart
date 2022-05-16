@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:after_layout/after_layout.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
+@immutable
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'After Layout - Good Example',
       home: HomeScreen(),
     );
   }
 }
 
+@immutable
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   HomeScreenState createState() => HomeScreenState();
 }
@@ -21,7 +27,9 @@ class HomeScreen extends StatefulWidget {
 class HomeScreenState extends State<HomeScreen> with AfterLayoutMixin<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container(color: Colors.red));
+    return Scaffold(
+      body: Container(color: Colors.red),
+    );
   }
 
   @override
@@ -33,15 +41,17 @@ class HomeScreenState extends State<HomeScreen> with AfterLayoutMixin<HomeScreen
   void showHelloWorld() {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        content: Text('Hello World'),
-        actions: <Widget>[
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text('DISMISS'),
-          )
-        ],
-      ),
+      builder: (BuildContext context) {
+        return AlertDialog(
+          content: const Text('Hello World'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('DISMISS'),
+            )
+          ],
+        );
+      },
     );
   }
 }

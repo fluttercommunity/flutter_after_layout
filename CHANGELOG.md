@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+  * Add support for Flutter 3.0.0
+  * Allow `afterFirstLayout` to be overridden with `FutureOr`.
+
 ## 1.1.1
   * Only callback if mounted.
 

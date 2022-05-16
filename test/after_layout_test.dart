@@ -3,30 +3,34 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:after_layout/after_layout.dart';
 
 void main() {
-	testWidgets('TestWidget', (WidgetTester tester) async {
-		int runCount = 0;
-		await tester.pumpWidget(TestWidget(() => runCount++));
-		expect(runCount, 1);
-	});
+  testWidgets('TestWidget', (WidgetTester tester) async {
+    int runCount = 0;
+    await tester.pumpWidget(TestWidget(callback: () => runCount++));
+    expect(runCount, 1);
+  });
 }
 
+@immutable
 class TestWidget extends StatefulWidget {
-	final VoidCallback callback;
+  const TestWidget({
+    Key? key,
+    required this.callback,
+  }) : super(key: key);
 
-	const TestWidget(this.callback);
+  final VoidCallback callback;
 
-	@override
-	_TestWidgetState createState() => _TestWidgetState();
+  @override
+  State<TestWidget> createState() => _TestWidgetState();
 }
 
 class _TestWidgetState extends State<TestWidget> with AfterLayoutMixin<TestWidget> {
-	@override
-	Widget build(BuildContext context) {
-		return Container();
-	}
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 
-	@override
-	void afterFirstLayout(BuildContext context) {
-		widget.callback();
-	}
+  @override
+  void afterFirstLayout(BuildContext context) {
+    widget.callback();
+  }
 }
