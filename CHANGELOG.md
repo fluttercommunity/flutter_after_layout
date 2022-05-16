@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1
+  * Only callback if mounted.
+
 ## 1.1.0
   * Add Null Safety.
   * Switch to endOfFrame callback.
