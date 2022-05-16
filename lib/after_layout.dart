@@ -7,7 +7,9 @@ mixin AfterLayoutMixin<T extends StatefulWidget> on State<T> {
   void initState() {
     super.initState();
     WidgetsBinding.instance!.endOfFrame.then(
-      (_) => afterFirstLayout(context),
+      (_) {
+        if (mounted) afterFirstLayout(context);
+      },
     );
   }
 
